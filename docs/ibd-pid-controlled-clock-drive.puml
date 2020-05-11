@@ -22,7 +22,7 @@ frame "ibd [ PID-Controlled Clock Drive ]" {
       component "<b>K_d * de/dt</b>" as d
     }
 
-    theta_r --> e : +
+    e <- theta_r : +
 
     e --> p
     e --> i
@@ -35,7 +35,7 @@ frame "ibd [ PID-Controlled Clock Drive ]" {
     d --> u : +
 
     component "<b>pwm.duty(u)</b>" as pwm_gen
-    u --> pwm_gen
+    u -> pwm_gen
 
     component "<b>n = serial.read(encoder_pin)</b>" as serial_read_encoder
     component "<b>Output Angle, theta(n)</b>" as theta
@@ -66,7 +66,7 @@ frame "ibd [ PID-Controlled Clock Drive ]" {
   component "<b>Rotory Encoder</b>" as encoder
   interface "<b>Serial bus</b>" as serial_bus_encoder
 
-  ra <.. gearbox
+  ra <. gearbox
   encoder <.. ra
 
   serial_bus_encoder - serial_read_encoder

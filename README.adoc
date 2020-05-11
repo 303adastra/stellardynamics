@@ -2,4 +2,4 @@
 
 The goal of this project is to build a DIY https://en.wikipedia.org/wiki/Clock_drive[clock drive]
 for controlling an equatorial-mounted telescope,
-using a https://en.wikipedia.org/wiki/PID_controller[PID controller] for celestial tracking.
+using a https://en.wikipedia.org/wiki/Real-time_clock[real-time clock] driven https://en.wikipedia.org/wiki/PID_controller[PID controller] for celestial tracking.

@@ -1,0 +1,5 @@
+= Reference Architecture =
+
+ifdef::env-github[]
+image:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/capsulecorplab/pid-controlled-clock-drive/master/docs/ibd-pid-controlled-clock-drive.puml[]
+endif::[]

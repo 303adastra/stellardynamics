@@ -1,3 +1,4 @@
+
 ---
 title: "Reference Architecture"
 linkTitle: "Reference Architecture"
@@ -5,6 +6,7 @@ weight: 1
 description: >
   System design architecture for PID-controlled clock-drive
 ---
+
 = Reference Architecture =
 
 ifndef::env-github[]

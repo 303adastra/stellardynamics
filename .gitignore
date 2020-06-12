@@ -1,6 +1,8 @@
-
+# Hugo
 public/
 resources/
 node_modules/
 tech-doc-hugo
 
+# Asciidoctor
+.asciidoctor/

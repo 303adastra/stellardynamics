@@ -11,6 +11,8 @@ fi
 basedir=.
 diagram_target=/assets/diagram
 
+ARGS=$(echo "$@" | sed -e 's/--safe//')
+
 $ad --trace \
     --base-dir ${basedir} \
     --require asciidoctor-diagram \
@@ -25,7 +27,7 @@ $ad --trace \
     --attribute source-highlighter=highlightjs \
     --attribute toc-title! \
     --attribute diagram-svg-type=inline \
-    - \
+    $ARGS \
     | sed -E -e "s,img src=\"([^/]+)\",img src=\"${diagram_target}/\1\","
 
 mv_diagram_target=static${diagram_target}

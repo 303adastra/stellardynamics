@@ -9,7 +9,7 @@ elif [ -f $HOME/.rbenv/shims/asciidoctor ]; then
 fi
 
 basedir=.
-diagram_target=/assets/diagram
+diagram_target=/images
 
 ARGS=$(echo "$@" | sed -e 's/--safe//')
 

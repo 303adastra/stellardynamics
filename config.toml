@@ -1,6 +1,6 @@
 baseURL = "https://303adastra.github.io/pid-controlled-clock-drive"
 title = "PID-controlled clock drive"
-canonifyURLs = false
+canonifyURLs = true
 
 enableRobotsTXT = true
 

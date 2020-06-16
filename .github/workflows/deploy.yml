@@ -17,7 +17,7 @@ jobs:
       - run: npm ci
 
       - name: Build
-        run: docker run --rm --volume $PWD:/src -w "/src" bwklein/hugo-asciidoctor /usr/bin/env sh -c "export PATH=$PWD/bin:$PATH && hugo --minify"
+        run: docker run --rm --volume $PWD:/src -w "/src" bwklein/hugo-asciidoctor ./build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

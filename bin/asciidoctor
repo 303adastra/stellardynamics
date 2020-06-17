@@ -30,12 +30,14 @@ $ad --trace \
     $ARGS \
     | sed -E -e "s,img src=\"([^/]+)\",img src=\"${diagram_target}/\1\","
 
-mv_diagram_target=public${diagram_target}
-mkdir -p ${mv_diagram_target}
+mkdir -p static${diagram_target}
+mkdir -p public${diagram_target}
 if ls ${basedir}/*.svg >/dev/null 2>&1; then
-    mv -f ${basedir}/*.svg ${mv_diagram_target}
+    cp -f ${basedir}/*.svg static${diagram_target}
+    cp -f ${basedir}/*.svg public${diagram_target}
 fi
 
 if ls *.png >/dev/null 2>&1; then
-    mv -f ${basedir}/*.png ${mv_diagram_target}
+    cp -f ${basedir}/*.png static${diagram_target}
+    cp -f ${basedir}/*.png public${diagram_target}
 fi

@@ -5,7 +5,7 @@ skinparam linetype polyline
 skinparam linetype ortho
 '/
 
-frame "ibd [ PID-Controlled Clock Drive ]" {
+frame "ibd [System] PID-Controlled Clock Drive [Data Flow] ]" {
 
   component "<b>Real Time Clock (RTC)</b>" as rtc
 

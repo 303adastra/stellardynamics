@@ -1,6 +1,6 @@
 baseURL = "https://303adastra.github.io/pid-controlled-clock-drive"
 title = "PID-controlled clock drive"
-canonifyURLs = true
+canonifyURLs = false
 
 enableRobotsTXT = true
 
@@ -68,6 +68,10 @@ languageName ="English"
 weight = 1
 
 [markup]
+  [markup.asciidocext]
+    extensions = ["asciidoctor-diagram"]
+    workingFolderCurrent = true
+    trace = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true

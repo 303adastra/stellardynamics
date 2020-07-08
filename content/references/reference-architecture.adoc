@@ -12,7 +12,7 @@ description: >
 ifndef::env-github[]
 [plantuml, ibd-pid-controlled-clock-drive, svg]
 ....
-include::content/References/ibd-pid-controlled-clock-drive.puml[]
+include::system_model/ibd-system-pid-controlled-clock-drive-dataflow.puml[]
 ....
 endif::[]
 

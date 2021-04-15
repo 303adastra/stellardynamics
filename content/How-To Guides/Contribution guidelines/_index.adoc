@@ -7,10 +7,6 @@ description: >
   How to contribute to the docs
 ---
 
-{{% pageinfo %}}
-These guidelines assume that you're familiar with the GitHub workflow.
-{{% /pageinfo %}}
-
 == How to Contribute
 
 We use https://gohugo.io/[Hugo] to format and generate our website, the

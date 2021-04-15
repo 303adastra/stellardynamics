@@ -1,0 +1,10 @@
+---
+more:
+  - name: Releases
+    ref: "https://github.com/303adastra/clockdriveos/releases"
+    external: true
+    icon: "gdoc_download"
+  - name: "View Source"
+    ref: "https://github.com/303adastra/clockdriveos"
+    external: true
+    icon: "gdoc_github"

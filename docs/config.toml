@@ -28,7 +28,7 @@ enableGitInfo = false
   geekdocToC = 3
 
   geekdocRepo = "https://github.com/303adastra/clockdriveos"
-  geekdocEditPath = "edit/main/content"
+  geekdocEditPath = "edit/main/docs/content"
 
   geekdocSearch = true
   geekdocSearchShowParent = true

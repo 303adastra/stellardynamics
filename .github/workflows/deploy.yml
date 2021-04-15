@@ -14,10 +14,8 @@ jobs:
           submodules: recursive  # Fetch Hugo themes
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - run: npm ci
-
       - name: Build
-        run: docker build -t hugo-asciidoctor-plantuml . && docker run --rm -v $PWD:/src -w "/src" hugo-asciidoctor-plantuml bash -c "hugo --minify --destination public"
+        run: bash build.sh
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

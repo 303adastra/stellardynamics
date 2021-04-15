@@ -1,0 +1,14 @@
+
+---
+title: "System Architecture"
+weight: -10
+---
+
+System Architecture for ClockdriveOS on Raspberry Pi
+
+== PID-controlled clock drive ==
+
+[plantuml, ibd-pid-controlled-clock-drive, svg]
+....
+include::system_model/ibd-system-pid-controlled-clock-drive-dataflow.puml[]
+....

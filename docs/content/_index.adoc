@@ -4,3 +4,6 @@ title: "Documentation"
 weight: 0
 ---
 
+Welcome to the ClockdriveOS Documentation!
+ClockdriveOS is an interactive celestial tracking system for an equatorial (EQ) telescope mount.
+

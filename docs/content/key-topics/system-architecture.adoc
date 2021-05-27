@@ -10,7 +10,7 @@ System Architecture for ClockdriveOS on Raspberry Pi
 
 [plantuml, ibd-pid-controlled-clock-drive, svg]
 ....
-include::system_model/ibd-system-pid-controlled-clock-drive-dataflow.puml[]
+include::system-model/ibd-system-pid-controlled-clock-drive-dataflow.puml[]
 ....
 
 == RightAscensionDriver ==
@@ -18,5 +18,5 @@ include::system_model/ibd-system-pid-controlled-clock-drive-dataflow.puml[]
 RightAscensionDriver class diagram 
 [plantuml, rightascensiondriver, svg]
 ....
-include::system_model/right-ascension-driver.puml[]
+include::system-model/right-ascension-driver.puml[]
 ....

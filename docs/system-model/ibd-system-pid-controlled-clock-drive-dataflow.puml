@@ -10,7 +10,7 @@ frame "ibd [System] PID-Controlled Clock Drive [Data Flow] ]" {
   component "<b>Real Time Clock (RTC)</b>" as rtc
 
   rectangle "<b>PID Controller</b>" <<microcontroller>> as G {
-    !include system_model/block-pid-controlled-clock-drive.puml
+    !include system-model/block-pid-controlled-clock-drive.puml
   }
 
   interface "<b>Serial Bus</b>" as serial_bus_rtc

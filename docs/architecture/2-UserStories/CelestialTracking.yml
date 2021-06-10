@@ -1,0 +1,8 @@
+id: 1
+name: "Celestial Tracking"
+actor: "Amateur Astronomer"
+behavior: "generate an adjustable square wave on the STEP pin of a stepper motor driver"
+rationale: "automate celestial tracking"
+derivedFrom: 
+- "1-StakeholderNeeds/DSOAstrophotography.yml"
+example: "generate a square wave on the STEP pin of a DRV8825 stepper motor driver to rotate the right ascension axis on a German Equatorial Mount (GEM)."

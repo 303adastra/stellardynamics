@@ -6,10 +6,3 @@ weight: -10
 
 System Architecture for ClockdriveOS on Raspberry Pi
 
-== RightAscensionDriver ==
-
-RightAscensionDriver class diagram
-[plantuml, rightascensiondriver, svg]
-....
-include::system-model/right-ascension-driver.puml[]
-....

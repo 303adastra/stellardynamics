@@ -6,16 +6,9 @@ weight: -10
 
 System Architecture for ClockdriveOS on Raspberry Pi
 
-== PID-controlled clock drive ==
-
-[plantuml, ibd-pid-controlled-clock-drive, svg]
-....
-include::system-model/ibd-system-pid-controlled-clock-drive-dataflow.puml[]
-....
-
 == RightAscensionDriver ==
 
-RightAscensionDriver class diagram 
+RightAscensionDriver class diagram
 [plantuml, rightascensiondriver, svg]
 ....
 include::system-model/right-ascension-driver.puml[]

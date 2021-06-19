@@ -5,4 +5,24 @@ linkTitle: "Getting Started"
 weight: 1
 ---
 
+The following tutorial is a quickstart guide for operating a German equatorial mount for celestial tracking, using the following:
+
+. CG-4 German equatorial mount
+. Nema17 stepper motor
+. Raspberry Pi 3B+
+. DRV8824 stepper motor driver
+
+== Setup/Installation
+
 Coming soon...
+
+== Run clockdrive
+
+Once the ClockDriveOS package is loaded, evaluate the following to run the clock-drive via a remote Playground window:
+
+```
+ClockDrive new
+   mount: CG4;
+   motor: Nema17;
+   engage.
+```

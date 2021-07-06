@@ -1,11 +1,11 @@
 Class {
-	#name : #ClockDriveOS,
+	#name : #BaselineOfClockDriveOS,
 	#superclass : #BaselineOf,
 	#category : #BaselineOfClockDriveOS
 }
 
 { #category : #baselines }
-ClockDriveOS >> baseline: spec [
+BaselineOfClockDriveOS >> baseline: spec [
 	"baseline"
 
 	<baseline>
@@ -17,7 +17,7 @@ ClockDriveOS >> baseline: spec [
 ]
 
 { #category : #'as yet unclassified' }
-ClockDriveOS >> stellarCartography: spec [
+BaselineOfClockDriveOS >> stellarCartography: spec [
 	spec
 		baseline: 'StellarCartography'
 		with: [ spec

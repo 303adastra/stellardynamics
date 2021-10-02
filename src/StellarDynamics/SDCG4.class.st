@@ -1,10 +1,10 @@
 Class {
-	#name : #CG4,
-	#superclass : #Mount,
+	#name : #SDCG4,
+	#superclass : #SDMount,
 	#category : #StellarDynamics
 }
 
 { #category : #'as yet unclassified' }
-CG4 class >> wormGearRatio [
+SDCG4 class >> wormGearRatio [
 	^ 130
 ]

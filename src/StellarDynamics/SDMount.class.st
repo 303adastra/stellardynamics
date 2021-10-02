@@ -1,10 +1,10 @@
 Class {
-	#name : #StepperMotor,
+	#name : #SDMount,
 	#superclass : #Object,
 	#category : #StellarDynamics
 }
 
 { #category : #'as yet unclassified' }
-StepperMotor class >> stepsPerRev [
+SDMount class >> wormGearRatio [
 	^ self subclassResponsibility
 ]

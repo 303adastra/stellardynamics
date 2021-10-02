@@ -1,5 +1,5 @@
 Class {
-	#name : #ClockDrive,
+	#name : #SDClockDrive,
 	#superclass : #Object,
 	#instVars : [
 		'motor',
@@ -9,33 +9,33 @@ Class {
 }
 
 { #category : #accessing }
-ClockDrive >> motor [
+SDClockDrive >> motor [
 	^ motor
 ]
 
 { #category : #accessing }
-ClockDrive >> motor: aStepperMotorClass [
+SDClockDrive >> motor: aStepperMotorClass [
 	motor := aStepperMotorClass
 ]
 
 { #category : #'as yet unclassified' }
-ClockDrive >> motor: aStepperMotorClass mount: aMountClass [
+SDClockDrive >> motor: aStepperMotorClass mount: aMountClass [
 	motor := aStepperMotorClass.
 	mount := aMountClass.
 ]
 
 { #category : #accessing }
-ClockDrive >> mount [
+SDClockDrive >> mount [
 	^ mount
 ]
 
 { #category : #accessing }
-ClockDrive >> mount: aMountClass [
+SDClockDrive >> mount: aMountClass [
 	mount := aMountClass
 ]
 
 { #category : #'as yet unclassified' }
-ClockDrive >> stepDelay [
+SDClockDrive >> stepDelay [
 	"Returns the step delay (square-wave period divided by 2) needed to drive a stepper motor driver on a clockdrive system, such that the Right-Ascension (RA) axis rotates at the Earth's rotation rate, given the steps per revolution and gear ratio for a specified stepper motor & mount, respectively."
 
 	| earthRotationPeriod |

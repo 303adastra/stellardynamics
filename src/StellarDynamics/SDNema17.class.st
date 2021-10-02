@@ -1,10 +1,10 @@
 Class {
-	#name : #Nema17,
-	#superclass : #StepperMotor,
+	#name : #SDNema17,
+	#superclass : #SDStepperMotor,
 	#category : #StellarDynamics
 }
 
 { #category : #'as yet unclassified' }
-Nema17 class >> stepsPerRev [
+SDNema17 class >> stepsPerRev [
 	^ 200
 ]

@@ -5,13 +5,14 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-SDClockDriveTests >> teststepDelay [
-	"This test verifies that ClockDrive>>stepDelay returns the expected Delay (square-wave period divided by 2) needed to drive a stepper motor driver on a clockdrive system, such that the Right-Ascension (RA) axis rotates at the Earth's rotation rate, given a Nema17 stepper motor & CG-4 EQ mount"
+SDClockDriveTests >> teststepDuration [
+	"This test verifies that SDClockDrive>>stepDuration returns the expected Duration (square-wave period) needed to drive a stepper motor driver on a clockdrive system, such that the Right-Ascension (RA) axis rotates at the Earth's rotation rate"
 
-	| clockdrive stepDelay |
-	clockdrive := SDClockDrive new motor: SDNema17 mount: SDCG4.
-	stepDelay := clockdrive stepDelay.
-	self
-		assert: stepDelay asString
-		equals: (3314 / 2) milliSeconds asDelay asString
+	| clockdrive stepDuration |
+	clockdrive := SDClockDrive new
+		stepsPerRev: 200
+		microstepResolution: 1 / 32
+		wormGearRatio: 130.
+	stepDuration := clockdrive stepDuration.
+	self assert: stepDuration equals: (3314 / 32) milliSeconds asDuration
 ]

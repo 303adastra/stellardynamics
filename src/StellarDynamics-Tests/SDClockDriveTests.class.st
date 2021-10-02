@@ -11,7 +11,7 @@ SDClockDriveTests >> teststepDuration [
 	| clockdrive stepDuration |
 	clockdrive := SDClockDrive new
 		stepsPerRev: 200
-		microstepResolution: 1 / 32
+		microstepRes: 1 / 32
 		wormGearRatio: 130.
 	stepDuration := clockdrive stepDuration.
 	self assert: stepDuration equals: (3314 / 32) milliSeconds asDuration

@@ -20,7 +20,7 @@ SDClockDrive >> stepDuration [
 ]
 
 { #category : #'as yet unclassified' }
-SDClockDrive >> stepsPerRev: anInteger microstepResolution: anInteger2 wormGearRatio: anInteger3 [
+SDClockDrive >> stepsPerRev: anInteger microstepRes: anInteger2 wormGearRatio: anInteger3 [
 	stepsPerRev := anInteger.
 	microstepResolution := anInteger2.
 	wormGearRatio := anInteger3

@@ -1,5 +1,5 @@
-baseURL = "https://303adastra.github.io/clockdriveos"
-title = "ClockDriveOS"
+baseURL = "https://303adastra.github.io/stellardynamics"
+title = "StellarDynamics"
 theme = "geekdoc"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
@@ -27,7 +27,7 @@ enableGitInfo = false
   # geekdocMenuBundle = true
   geekdocToC = 3
 
-  geekdocRepo = "https://github.com/303adastra/clockdriveos"
+  geekdocRepo = "https://github.com/303adastra/stellardynamics"
   geekdocEditPath = "edit/main/docs/content"
 
   geekdocSearch = true

@@ -4,7 +4,7 @@ title: "Contribute"
 weight: 5
 ---
 
-ClockDriveOS is an open-source project and relies on its community to continuously improve.
+StellarDynamics is an open-source project and relies on its community to continuously improve.
 
 Contributions can come from a wide range of skills and expertise. Every contribution, however small, is valued.
 

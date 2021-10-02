@@ -4,7 +4,7 @@ title: "Documentation"
 weight: 0
 ---
 
-Welcome to the ClockDriveOS Documentation!
+Welcome to the StellarDynamics Documentation!
 
 Documentation is organized into the following categories:
 

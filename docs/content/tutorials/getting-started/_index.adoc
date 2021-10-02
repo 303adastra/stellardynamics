@@ -5,7 +5,9 @@ linkTitle: "Getting Started"
 weight: 1
 ---
 
-The following tutorial is a quickstart guide for operating a German equatorial mount for celestial tracking, using the following:
+The following tutorial is a quickstart guide for operating a clockdrive system for celestial tracking.
+
+You'll need the following:
 
 . CG-4 German equatorial mount
 . Nema17 stepper motor
@@ -18,11 +20,9 @@ Coming soon...
 
 == Run clockdrive
 
-Once the ClockDriveOS package is loaded, evaluate the following to run the clock-drive via a remote Playground window:
+Once the StellarDynamics package is loaded, evaluate the following to compute the step duration needed operate the clockdrive system:
 
 ```
-ClockDrive new
-   mount: CG4;
-   motor: Nema17;
-   engage.
+clockdrive := SDClockDrive new stepsPerRev: 200 microstepRes: 1/32 wormGearRatio: 130.
+clockdrive stepDuration.
 ```

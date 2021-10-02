@@ -1,36 +1,50 @@
 baseURL = "https://303adastra.github.io/stellardynamics"
 title = "StellarDynamics"
-theme = "geekdoc"
-pygmentsUseClasses = true
+canonifyURLs = false
+
+enableRobotsTXT = true
+
+# Hugo allows theme composition (and inheritance). The precedence is from left to right.
+theme = ["docsy"]
+
+# Will give values to .Lastmod etc.
+enableGitInfo = true
+
+# Language settings
+contentDir = "content"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Static dirs
+staticDir = "static"
+
+# Highlighting config
 pygmentsCodeFences = true
-timeout = 180000
-pluralizeListTitles = false
+pygmentsUseClasses = false
+# Use the new Chroma Go highlighter in Hugo.
+pygmentsUseClassic = false
+#pygmentsOptions = "linenos=table"
+# See https://help.farbox.com/pygments.html
+pygmentsStyle = "tango"
 
-# Geekdoc configuration
-disablePathToLower = false
-enableGitInfo = false
+# Configure how URLs look like per section.
+[permalinks]
+blog = "/:section/:year/:month/:day/:slug/"
 
-# Needed for mermaid shortcodes
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe  = true
-  [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 9
-  [markup.asciidocext]
-    extensions  = ["asciidoctor-diagram"]
-    workingFolderCurrent  = true
-    trace  = true
+## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
+[blackfriday]
+plainIDAnchors = true
+hrefTargetBlank = true
+angledQuotes = false
+latexDashes = true
 
-[params]
-  # geekdocMenuBundle = true
-  geekdocToC = 3
+# Image processing configuration.
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"
 
-  geekdocRepo = "https://github.com/303adastra/stellardynamics"
-  geekdocEditPath = "edit/main/docs/content"
-
-  geekdocSearch = true
-  geekdocSearchShowParent = true
-
-  geekdocImageLazyLoading = true

@@ -39,7 +39,7 @@ ClockDrive >> stepDelay [
 	"Returns the step delay (square-wave period divided by 2) needed to drive a stepper motor driver on a clockdrive system, such that the Right-Ascension (RA) axis rotates at the Earth's rotation rate, given the steps per revolution and gear ratio for a specified stepper motor & mount, respectively."
 
 	| earthRotationPeriod |
-	earthRotationPeriod := Earth rotationPeriod.
+	earthRotationPeriod := SCEarth rotationPeriod.
 	^ (earthRotationPeriod / motor stepsPerRev / mount wormGearRatio / 2)
 		asDelay
 ]

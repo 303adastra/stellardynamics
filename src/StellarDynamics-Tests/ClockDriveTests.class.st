@@ -1,7 +1,7 @@
 Class {
 	#name : #ClockDriveTests,
 	#superclass : #TestCase,
-	#category : #'ClockDriveOS-Tests'
+	#category : #'StellarDynamics-Tests'
 }
 
 { #category : #'as yet unclassified' }

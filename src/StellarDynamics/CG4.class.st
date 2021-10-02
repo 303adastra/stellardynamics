@@ -1,7 +1,7 @@
 Class {
 	#name : #CG4,
 	#superclass : #Mount,
-	#category : #ClockDriveOS
+	#category : #StellarDynamics
 }
 
 { #category : #'as yet unclassified' }

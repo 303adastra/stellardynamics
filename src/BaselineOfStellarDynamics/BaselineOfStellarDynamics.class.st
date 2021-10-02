@@ -1,11 +1,11 @@
 Class {
-	#name : #BaselineOfClockDriveOS,
+	#name : #BaselineOfStellarDynamics,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfClockDriveOS
+	#category : #BaselineOfStellarDynamics
 }
 
 { #category : #baselines }
-BaselineOfClockDriveOS >> baseline: spec [
+BaselineOfStellarDynamics >> baseline: spec [
 	"baseline"
 
 	<baseline>
@@ -13,11 +13,11 @@ BaselineOfClockDriveOS >> baseline: spec [
 		for: #common
 		do: [ "Dependencies"
 			self stellarCartography: spec.	"Packages"
-			spec package: 'ClockDriveOS' ]
+			spec package: 'StellarDynamics' ]
 ]
 
 { #category : #'as yet unclassified' }
-BaselineOfClockDriveOS >> stellarCartography: spec [
+BaselineOfStellarDynamics >> stellarCartography: spec [
 	spec
 		baseline: 'StellarCartography'
 		with: [ spec

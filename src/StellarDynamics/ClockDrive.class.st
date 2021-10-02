@@ -5,7 +5,7 @@ Class {
 		'motor',
 		'mount'
 	],
-	#category : #ClockDriveOS
+	#category : #StellarDynamics
 }
 
 { #category : #accessing }

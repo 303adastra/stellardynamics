@@ -1,7 +1,7 @@
 Class {
 	#name : #Nema17,
 	#superclass : #StepperMotor,
-	#category : #ClockDriveOS
+	#category : #StellarDynamics
 }
 
 { #category : #'as yet unclassified' }
